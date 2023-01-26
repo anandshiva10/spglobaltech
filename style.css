@@ -361,7 +361,7 @@ a.cta:hover {
     row-gap: 2rem;
 }
 .box{
-    width: 350px;
+    width: 400px;
     display: flex;
     height: 120px;
     gap: 2rem;
@@ -520,7 +520,7 @@ a.cta:hover {
         align-items: center;
     }
     .box {
-        width: 250px;
+        width: 350px;
         padding: 1rem;
     }
     .box .text .text-info {
@@ -690,7 +690,7 @@ a.cta:hover {
 
     .box{
         gap: 1rem;
-        width: 300px;
+        width: 335px;
     }
 }
 
