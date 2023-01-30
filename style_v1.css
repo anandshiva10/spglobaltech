@@ -1,5 +1,6 @@
 :root{
-    --background-color:#711def;
+    --background-color:#040606;
+    --secondary-color:#ff5360;
 }
 * {
     margin: 0;
@@ -36,24 +37,34 @@ body {
 
 #navbar {
     color: var(--background-color);
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 64px;
+    padding: 0 60px;
     font-size: 16px;
     transition: height 0.3s ease-in;
-    position: fixed;
+    position: sticky;
     z-index: 10;
     
 }
+
+.logo img{
+    height: 60px;
+    /* transition: height 0.3s ease-in; */
+}
+
 .small{
     height: 60px!important;
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.small .logo img{
+    height: 60px;
 }
 
 .navbar h1 {
@@ -91,7 +102,7 @@ body {
 
 .menu-list li.active,
 .menu-list li:hover {
-    color: #ff5360;
+    color: var(--secondary-color);
 }
 
 
@@ -118,7 +129,7 @@ body {
 }
 
 .title {
-    color: #ff5360;
+    color: var(--secondary-color);
     font-size: 3em;
     width: 80%;
     font-weight: bold;
@@ -168,7 +179,7 @@ a.cta:hover {
     align-items: center;
 }
 .heading {
-    color: #ff5360;
+    color: var(--secondary-color);
     font-size: 2em;
     font-weight: bold;
     letter-spacing: 3px;
@@ -439,7 +450,7 @@ a.cta:hover {
 .contactForm .inputBox input:valid ~ span,
 .contactForm .inputBox textarea:focus ~ span,
 .contactForm .inputBox textarea:valid ~ span{
-    color: #ff5360;
+    color: var(--secondary-color);
     font-size: 12px;
     transform: translateY(-20px);
 }
@@ -500,7 +511,9 @@ a.cta:hover {
 }
 
 @media (max-width:800px) {
-    .navbar,
+    #navbar{
+        padding: 0 10px;
+    }
     .left,
     .right {
         padding-left: 40px;
@@ -598,7 +611,7 @@ a.cta:hover {
         height: 40px;
         border: none;
         background: transparent;
-        color: #711def;
+        color: var(--background-color);
         outline: none;
         font-size: 1.7em;
         cursor: pointer;
@@ -656,7 +669,7 @@ a.cta:hover {
         right: 0;
         width: 80%;
         height: 100%;
-        background-color: #711def;
+        background-color: var(--background-color);
         color: #fff;
         padding: 46px;
         flex-direction: column;
