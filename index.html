@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="./style_v1.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style_v3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="script.js" type="text/javascript"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-    <title>SP Global Tech</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600;700&family=Montserrat:wght@300;400;500&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+<title>SP Global Tech | Home</title>
     <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
@@ -20,22 +24,53 @@
 })();
 </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=no"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-  <div class="notification">
-    <marquee scrollamount="6">Hurry up!!! Next <b>Selenium Java</b> batch starts from 6th February 2023. </marquee>
-  </div>
+  
+  <!-- <div id="myModal" class="modal">
+    <div class="modal-content">
+    <div class="spn">
+        <span class="close">&times;</span>
+    </div>
+      <div class="message">
+        <p>Hurry up!!! Next <b>DEVOPS</b> batch is going to start soon. Reach us out to register.</p>
+      </div>
+     
+    </div>
+  </div> -->
+  <!-- <script>
+
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
+   
+    setTimeout(function() {
+  modal.style.display = "block";
+  document.body.classList.add("modal-open");
+}, 5000);
+
+    span.onclick = function() {
+        modal.style.display = "none";
+        document.body.classList.remove("modal-open");
+    }
+   
+
+  </script> -->
     <header id="navbar">
+        <a href="#">
         <div class="logo">
             <img src="./images/logo.png">
         </div>
-
+        <div class="logo-white">
+            <img src="./images/logo-white.png">
+        </div>
+    </a>
         <section class="menu">
             <ul class="menu-list">
-                <li class="active"><a href="#home">Home</a></li>
+                <li class="active"><a href="#">Home</a></li>
                 <li><a href="#services" id="mobileMenu-ser">Services</a></li>
-                <li><a href="#courses" id="mobileMenu-cor">Courses</a></li>
+
                 <li ><a href="#about-us" id="mobileMenu-abt">About us</a></li>
                 <li><a href="#contact" id="mobileMenu-con">Contact</a></li>
             </ul>
@@ -50,272 +85,134 @@
     <section class="main" id="home">
 
         <section class="left">
-            <p class="title">ENCOURAGE, TEACH & TRANSFORM</p>
+            <p class="title">LAND YOUR NEXT <span class='red'>OPPORTUNITY</span> WITH US</p>
             <p class="msg">One stop solution for all the IT related problems and queries. Our team specializes in a wide range of services, including placement training, strategy development and more.</p>
             <a class="cta" href="#services">Know more</a>
         </section>
-
+<!-- 
         <section class="right">
             <img src="./images/img.png" alt="Langing image">
-        </section>
+        </section> -->
 
     </section>
 
     <section class="services" id="services">
         <div class="container">
 
-            <p class="heading">What we do?</p>
+            <p class="heading" data-aos="zoom-in">What we do?</p>
             <p class="sub-heading">We are proud to offer a wide range of services to help our clients achieve their goals and reach new heights of success. Our services include:</p>
-            <div class="services-cards">
+            <div class="services-cards" data-aos="zoom-in-up">
+                <a href="./pages/itconsulting.html">
+                    <div class="services-card">
+                        <!-- Cover -->
+                        <div class="card__icon">
+                            <img src="./images/consulting.jpg" alt="services image">
+                        </div>
+                    
+                        <!-- Content -->
+                        <div class="card__content">
+                            <p class="card-heading">IT Consulting</p>
+                            <p class="card-msg">We offer various solutions to meet your business needs in different aspects.</p>
+                            <p class="card-link">Click here to know more</p>
+                        </div>
+                       
+                    </div>
+                </a>
+                <a href="./pages/outsourcing.html">
                 <div class="services-card">
                     <!-- Cover -->
                     <div class="card__icon">
-                        <img src="./images/training.png" alt="training image">
+                        <img src="./images/outsource.jpg" alt="support image">
                     </div>
                 
                     <!-- Content -->
                     <div class="card__content">
-                        <p class="card-heading">Placement Training</p>
-                        <p class="card-msg">Our team will assist you in securing a position in one of your dream companies.</p>
-                    </div>
-                   
-                </div>
+                        <p class="card-heading">Outsourcing</p>
+                        <p class="card-msg">. Our company specializes in providing outsourcing services that can help your business achieve its goals.</p>
+                        <p class="card-link">Click here to know more</p>
 
+                    </div>
+                
+
+                </div>
+            </a>
+                <a href="./pages/webdev.html">
                 <div class="services-card">
                     <!-- Cover -->
                     <div class="card__icon">
-                        <img src="./images/service.png" alt="services image">
+                        <img src="./images/webdev.jpg" alt="support image">
                     </div>
                 
                     <!-- Content -->
                     <div class="card__content">
-                        <p class="card-heading">IT Services</p>
-                        <p class="card-msg">We offer various solutions to meet your business needs in different aspects.</p>
+                        <p class="card-heading">Web Development</p>
+                        <p class="card-msg">We offer world-class web development services to help businesses establish a strong online presence. </p>
+                        <p class="card-link">Click here to know more</p>
                     </div>
                    
                 </div>
+            </a>
+            <a href="./pages/appdev.html">
                 <div class="services-card">
                     <!-- Cover -->
                     <div class="card__icon">
-                        <img src="./images/support.png" alt="support image">
+                        <img src="./images/appdev.jpg" alt="support image">
                     </div>
                 
                     <!-- Content -->
                     <div class="card__content">
-                        <p class="card-heading">Job Support</p>
-                        <p class="card-msg">We have a dedicated team to provide comprehensive job support services to help our clients. </p>
+                        <p class="card-heading">App Development</p>
+                        <p class="card-msg">We will provide end-to-end live projects to our clients.</p>
+                        <p class="card-link">Click here to know more</p>
                     </div>
                    
-                </div>
+                </div>  
+            </a>
+            <a href="./pages/outsourcing.html">
                 <div class="services-card">
                     <!-- Cover -->
                     <div class="card__icon">
-                        <img src="./images/handson.png" alt="support image">
-                    </div>
-                
-                    <!-- Content -->
-                    <div class="card__content">
-                        <p class="card-heading">Hands-on Training</p>
-                        <p class="card-msg">We offer online training in innovative ways in various cut-throat technologies. </p>
-                    </div>
-                   
-                </div>
-                <div class="services-card">
-                    <!-- Cover -->
-                    <div class="card__icon">
-                        <img src="./images/corporate.png" alt="support image">
+                        <img src="./images/corporate.jpg" alt="support image">
                     </div>
                 
                     <!-- Content -->
                     <div class="card__content">
                         <p class="card-heading">Corporate Trainings</p>
                         <p class="card-msg">We provide best corporate trainings to boost your company's efficiency.</p>
+                       <p class="card-link">Click here to know more</p>
                     </div>
                    
                 </div>
-                <div class="services-card">
-                    <!-- Cover -->
-                    <div class="card__icon">
-                        <img src="./images/project.png" alt="support image">
+            </a>
+            <a href="./pages/placement.html">
+                    <div class="services-card">
+                        <!-- Cover -->
+                        <div class="card__icon">
+                            <img src="./images/training.jpg" alt="training image">
+                        </div>
+                    
+                        <!-- Content -->
+                        <div class="card__content">
+                            <p class="card-heading">Placement Training</p>
+                            <p class="card-msg">Our team will assist you in securing a position in one of your dream companies.</p>
+                           <p class="card-link">Click here to know more</p>
+                        </div>
+                       
                     </div>
-                
-                    <!-- Content -->
-                    <div class="card__content">
-                        <p class="card-heading">Live Projects</p>
-                        <p class="card-msg">We will provide end-to-end live projects to our clients.</p>
-                    </div>
-                   
-                </div>  
+                </a>
                
                 
             </div>
         </div>
           </section>
-          <section class="courses" id="courses">
+                   <section class="about-us" id="about-us">
             <div class="container">
-    
-                <p class="heading">What we offer?</p>
-                <p class="sub-heading">We are offering various trending courses which help in making you successful in the ever evolving IT Industry.</p>
-                <div class="courses-cards">
-
-
-                   
-
-                    <div class="courses-card">
-                        <!-- Cover -->
-                        <div class="course__icon">
-                            <img src="./images/java.png" alt="training image">
-                        </div>
-                    
-                        <!-- Content -->
-                        <div class="card__content">
-                            <p class="course_card-heading">Advanced Java</p>
-                            </div>
-                       
-                    </div>
-                    <div class="courses-card">
-                        <!-- Cover -->
-                        <div class="course__icon">
-                            <img src="./images/selenium-python.png" alt="training image">
-                        </div>
-                    
-                        <!-- Content -->
-                        <div class="card__content">
-                            <p class="course_card-heading">Selenium Python</p>
-                            </div>
-                       
-                    </div>
-                    <div class="courses-card">
-                        <!-- Cover -->
-                        <div class="course__icon">
-                            <img src="./images/selinium-java.png" alt="training image">
-                        </div>
-                    
-                        <!-- Content -->
-                        <div class="card__content">
-                            <p class="course_card-heading">Selenium Java</p>
-                            </div>
-                       
-                    </div>
-                    <div class="courses-card">
-                        <!-- Cover -->
-                        <div class="course__icon">
-                            <img src="./images/protractor.png" alt="training image">
-                        </div>
-                    
-                        <!-- Content -->
-                        <div class="card__content">
-                            <p class="course_card-heading">Protractor</p>
-                            </div>
-                       
-                    </div>
-                    <div class="courses-card">
-                        <!-- Cover -->
-                        <div class="course__icon">
-                            <img src="./images/cypress.png" alt="training image">
-                        </div>
-                    
-                        <!-- Content -->
-                        <div class="card__content">
-                            <p class="course_card-heading">Cypress.io</p>
-                            </div>
-                       
-                    </div>
-                    <div class="courses-card">
-                        <!-- Cover -->
-                        <div class="course__icon">
-                            <img src="./images/katalon.png" alt="training image">
-                        </div>
-                    
-                        <!-- Content -->
-                        <div class="card__content">
-                            <p class="course_card-heading">Katalon Studio</p>
-                            </div>
-                       
-                    </div>
-                    <div class="courses-card">
-                        <!-- Cover -->
-                        <div class="course__icon">
-                            <img src="./images/devops.png" alt="training image">
-                        </div>
-                    
-                        <!-- Content -->
-                        <div class="card__content">
-                            <p class="course_card-heading">Devops</p>
-                            </div>
-                       
-                    </div>
-                    <div class="courses-card">
-                        <!-- Cover -->
-                        <div class="course__icon">
-                            <img src="./images/dotnet.png" alt="dotnet image">
-                        </div>
-                    
-                        <!-- Content -->
-                        <div class="card__content">
-                            <p class="course_card-heading">.net</p>
-                            </div>
-                       
-                    </div>
-                    <div class="courses-card">
-                        <!-- Cover -->
-                        <div class="course__icon">
-                            <img src="./images/SAP.png" alt="dotnet image">
-                        </div>
-                    
-                        <!-- Content -->
-                        <div class="card__content">
-                            <p class="course_card-heading">SAP</p>
-                            </div>
-                       
-                    </div>
-                    <div class="courses-card">
-                        <!-- Cover -->
-                        <div class="course__icon">
-                            <img src="./images/webdriver.svg" alt="webdriver image">
-                        </div>
-                    
-                        <!-- Content -->
-                        <div class="card__content">
-                            <p class="course_card-heading">Web Driver IO</p>
-                            </div>
-                       
-                    </div>
-                    <div class="courses-card">
-                        <!-- Cover -->
-                        <div class="course__icon">
-                            <img src="./images/ServiceNow-Logo.png" alt="Servicenow image">
-                        </div>
-                    
-                        <!-- Content -->
-                        <div class="card__content">
-                            <p class="course_card-heading">Service Now</p>
-                            </div>
-                       
-                    </div>
-                    <div class="courses-card">
-                        <!-- Cover -->
-                        <div class="course__icon">
-                            <img src="./images/salesforce.png" alt="Servicenow image">
-                        </div>
-                    
-                        <!-- Content -->
-                        <div class="card__content">
-                            <p class="course_card-heading">salesforce</p>
-                            </div>
-                       
-                    </div>
-                </div>
-            </div>
-              </section>
-          <section class="about-us" id="about-us">
-            <div class="container">
-                <p class="heading">Who are we?</p>
+                <p class="heading" data-aos="zoom-in">Who are we? </p>
                 <div class="about-container">
-                <div class="about-left">
-                    <img src="./images/about.png">
+                <div class="about-left" data-aos="fade-right">
+                    <img src="./images/about.jpg">
                 </div>
-                <div class="about-right">
+                <div class="about-right" data-aos="fade-left">
                    <p class="paragraph">At SP Global Tech, we are dedicated to providing top-notch software training for professionals and graduates. Our team of experienced trainers and developers possess a wealth of knowledge and expertise in various software platforms and are committed to helping our clients enhance their skills and advance their careers. We specialize in training on trending technologies such as Java, QA Automation, SAP, .net and to provide hands-on experience to make the training more engaging for our clients.</p>
                     <p class="paragraph"> &emsp;Our training programs are tailored to meet the unique needs of each client, whether they are looking to improve their individual skills or train a team of employees. With years of experience in the field, our adept trainers are dedicated to providing ongoing support to our clients.</p>
                     <p class="paragraph"> &emsp;In addition to our comprehensive training programs, SP Global Tech also offers a wide range of consulting services to help organizations optimize their software development processes and improve their overall efficiency. Our team of experts work closely with clients to understand their specific needs and challenges, and provide customized solutions that help them achieve their goals.</p>
@@ -327,33 +224,39 @@
 
         <section class="contact" id="contact">
             <div class="container">
-                <p class="heading">Contact us</p>
+                <p class="heading" data-aos="zoom-in">Contact us</p>
                 <p class="sub-heading">Have a question? We're here to help. Feel free to reach us out anytime.</p>
                 <div class="contact_container">
+                    <a href="https://www.google.com/maps/place/Hyderabad,+Telangana/">
                     <div class="contactInfo">
-                        <div class="box">
+                        <div class="box" data-aos="zoom-in">
                             <div class="icon"><img src="./images/location.png"/></div>
                             <div class="text">
                                 <p class="text-title">Address</p>
                                 <p class="text-info">Hyderabad, Telangana</p>
                             </div>
                         </div>
-                        <div class="box">
+                    </a>
+                        <a href="tel:9676264664">
+                        <div class="box" data-aos="zoom-in">
                             <div class="icon"><img src="./images/phone.png"/></div>
                             <div class="text">
                                 <p class="text-title">Phone</p>
                                 <p class="text-info">+91 9676264664</p>
                             </div>
                         </div>
-                        <div class="box">
+                    </a>
+                        <a href="mailto:info@spglobaltech.com">
+                        <div class="box" data-aos="zoom-in">
                             <div class="icon"><img src="./images/email.png"/></div>
                             <div class="text">
                                 <p class="text-title">Email</p>
-                                <p class="text-info">spglobaltech.experts@gmail.com</p>
+                                <p class="text-info">info@spglobaltech.com</p>
                             </div>
                         </div>
+                    </a>
                     </div>
-                    <div class="contactForm">
+                    <div class="contactForm" data-aos="fade-left">
                         <form  id="contact-form" onsubmit="return false" class="form">
                             <!-- <p class="sub-heading" style="font-size: 20px;color: black;">Send us a message</p> -->
                             <div class="inputBox">
@@ -382,7 +285,35 @@
             </div>
         </section>
         <footer class="footer">
-            Copyright © <script>document.write(new Date().getFullYear())</script>  | SP Global Tech | All Rights Reserved.
+            <div class="footer-item">
+              <h3>  Our Company</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#about-us">About Us</a></li>
+                    <li><a href="./index.html#services">Services</a></li>
+                    <li><a href="./index.html#contact">Contact Us</a></li>
+                 </ul>
+            </div>
+            <div class="footer-item">
+                <h3> Services</h3>
+                <ul>
+                    <li><a href="./pages/itconsulting.html">IT Consulting</a></li>
+                    <li><a href="./pages/outsourcing.html">Outsourcing</a></li>
+                    <li><a href="./pages/webdev.html">Web Development</a></li>
+                    <li><a href="./pages/appdev.html">App Development</a></li>
+                    <li><a href="./pages/corporate.html">Corporate Training</a></li>
+                    <li><a href="./pages/placement.html">Placement Training</a></li>
+                     </ul>
+            </div>
+            <div class="footer-item social">
+                <h3>Follow us on</h3>
+                <div class="logos">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            </div>
         </footer>
     <script>
         var menu = document.querySelector('.menu');
@@ -399,10 +330,7 @@
         menuLstSer.addEventListener('click', () => {
             menu.classList.remove('opened')
         })
-        var menuLstAbt = document.querySelector('#mobileMenu-cor');
-        menuLstAbt.addEventListener('click', () => {
-            menu.classList.remove('opened')
-        })
+
         var menuLstAbt = document.querySelector('#mobileMenu-abt');
         menuLstAbt.addEventListener('click', () => {
             menu.classList.remove('opened')
@@ -425,62 +353,97 @@ navbarOptions.forEach(option => {
 
     
         function addOnScollEvent(){
-  window.onscroll = function() {
-    if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
-      document.getElementById("navbar").classList.add("small");
-    } else {
-      document.getElementById("navbar").classList.remove("small");
-    }
-  }
-
+//   window.onscroll = function() {
+//     if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+//         document.getElementById("navbar").classList.add("small");
+  
+//     } else {
+//       document.getElementById("navbar").classList.remove("small");
+//     }
+//   }
+ 
   window.onscroll=function(){
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   // Execute code for mobile devices
   if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
       document.getElementById("navbar").classList.add("small");
+      var logo= document.querySelector(".logo")
+        logo.style.display="block";
+        var logo2= document.querySelector(".logo-white")
+        logo2.style.display="none";
     } else {
       document.getElementById("navbar").classList.remove("small");
+      var logo= document.querySelector(".logo")
+        logo.style.display="none";
+        var logo2= document.querySelector(".logo-white")
+        logo2.style.display="block";
     }
 } else {
   // Execute code for web browsers
   const  navbarOption = document.querySelectorAll('.menu-list li');
     if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
       document.getElementById("navbar").classList.add("small");
+      var logo= document.querySelector(".logo")
+        logo.style.display="block";
+        var logo2= document.querySelector(".logo-white")
+        logo2.style.display="none";
     } else {
       document.getElementById("navbar").classList.remove("small");
+      var logo= document.querySelector(".logo")
+        logo.style.display="none";
+        var logo2= document.querySelector(".logo-white")
+        logo2.style.display="block";
     }
-    if((document.body.scrollTop > 0|| document.documentElement.scrollTop > 0) &&(document.body.scrollTop <= 655 || document.documentElement.scrollTop <= 655) ){
+    if((document.body.scrollTop > 0|| document.documentElement.scrollTop > 0) &&(document.body.scrollTop <= 534 || document.documentElement.scrollTop <= 534) ){
         navbarOptions.forEach(option => option.classList.remove('active'));
         navbarOption[0].classList.add('active')
     }
-    if((document.body.scrollTop > 655 || document.documentElement.scrollTop > 655) &&(document.body.scrollTop <= 1514 || document.documentElement.scrollTop <= 1514) ){
+    if((document.body.scrollTop > 534 || document.documentElement.scrollTop > 534) &&(document.body.scrollTop <= 1381 || document.documentElement.scrollTop <= 1381) ){
         navbarOptions.forEach(option => option.classList.remove('active'));
         navbarOption[1].classList.add('active')
     }
-    if((document.body.scrollTop > 1514 || document.documentElement.scrollTop > 1514) &&(document.body.scrollTop < 2247 || document.documentElement.scrollTop < 2247) ){
+    if((document.body.scrollTop > 1381 || document.documentElement.scrollTop > 1381) &&(document.body.scrollTop <= 2200 || document.documentElement.scrollTop <= 2200) ){
         navbarOptions.forEach(option => option.classList.remove('active'));
         navbarOption[2].classList.add('active')
     }
-    if((document.body.scrollTop >=2247 || document.documentElement.scrollTop > 2247 ) && (document.body.scrollTop <3231 || document.documentElement.scrollTop <3231 ) ){
+    if(document.body.scrollTop >=2200 || document.documentElement.scrollTop > 2200  ){
         navbarOptions.forEach(option => option.classList.remove('active'));
         navbarOption[3].classList.add('active')
-    }
-    if((document.body.scrollTop >=3231 || document.documentElement.scrollTop >= 3231 ) ){
-        navbarOptions.forEach(option => option.classList.remove('active'));
-        navbarOption[4].classList.add('active')
     }
 }
    
   }
 }
 document.addEventListener("DOMContentLoaded", addOnScollEvent);
-
-
-
-
 </script>
+<!-- <script>
+    function addOnScollEvents(){
+    window.onscroll = function() {
+  var header = document.getElementsByClassName("logo");
+  if (window.pageYOffset > 70) {
+    console.log('hello')
+  } 
+    }
+}
+  document.addEventListener("DOMContentLoaded", addOnScollEvents);
 
+</script> -->
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        once: true,
+        disable:'phone'
+    });
+  </script>
+<script>
+      window.onscroll = function() {
+    if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+      
+    } 
+  }
+</script>
 </body>
 
 </html>

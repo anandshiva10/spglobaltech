@@ -1,0 +1,40 @@
+<header id="navbar-service">
+  <div class='logo-white'>
+  <a href="../index.html"> 
+        <img src="../images/logo-white.png">
+  </a>
+</div >
+    <section class="menu">
+        <ul class="menu-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#services" id="mobileMenu-ser">Services</a></li>
+            <!-- <li><a href="../index.html#courses" id="mobileMenu-cor">Courses</a></li> -->
+            <li ><a href="../index.html#about-us" id="mobileMenu-abt">About us</a></li>
+            <li><a href="../index.html#contact" id="mobileMenu-con">Contact</a></li>
+        </ul>
+
+        <button>
+            <i class="fas fa-times"></i>
+            <i class="fas fa-bars"></i>
+        </button>
+        
+    </section>
+    <script>
+      function addOnScollEvent(){
+  window.onscroll = function() {
+    if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+      document.getElementById("navbar").classList.add("small");
+    } else {
+      document.getElementById("navbar").classList.remove("small");
+    }
+  }}
+  document.addEventListener("DOMContentLoaded", addOnScollEvent);
+
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+
+    </script>
+</header>
